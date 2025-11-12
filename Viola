@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ViolaBolt 🎻</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #8e44ad, #3498db);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px;
+}
+section {
+  background: rgba(255,255,255,0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+button {
+  background: #fff;
+  color: #6a1b9a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #e1bee7;
+}
+input, textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>🎻 ViolaBolt</h1>
+    <p>Play, Learn & Improve — Your Smart Viola Companion</p>
+  </header>
+
+  <section>
+    <h2>🎵 Play a Song</h2>
+    <p>Paste a YouTube link below to start playing along.</p>
+    <input type="text" id="ytLink" placeholder="Paste YouTube link here" />
+    <button onclick="playSong()">Play</button>
+    <div id="player"></div>
+  </section>
+
+  <section>
+    <h2>🎶 AI Note Generator</h2>
+    <p>Upload a shor
